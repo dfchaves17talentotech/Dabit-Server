@@ -1,7 +1,8 @@
 import express from "express";
-import { continentRoutes } from "./routes/continent_routes";
+import { continentRoutes } from "./routes/continents_routes";
 import { projectRoutes } from "./routes/projects_routes";
 import { contactRoutes } from "./routes/contacts_routes";
+import { userRoutes } from "./routes/users_routes";
 import cors from "cors";
 
 
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api', continentRoutes);
 app.use('/api', projectRoutes);
 app.use('/api', contactRoutes);
+app.use('/api', userRoutes);
 
 app.listen(port, () => {
     console.log(`Estoy corriendo en el puerto ${port}`);
