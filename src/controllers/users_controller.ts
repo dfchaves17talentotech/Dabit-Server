@@ -14,8 +14,8 @@ export const createUser = async (req: Request, res: Response): Promise<Response>
 
 export const getUsers = async (req: Request, res: Response): Promise<Response> => {
     try {
-        const query = req.query;
-        const collection = await dbConnection('user');
+        const query = req.body;
+        const collection = await dbConnection('users');
         const filteredDocs = await collection.find(query).toArray();    
         return res.status(200).json(filteredDocs);
     } catch (error) {
