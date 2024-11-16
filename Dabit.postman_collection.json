@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "b12109ff-b716-4086-a567-9568bd075e09",
+		"name": "Dabit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37727281"
+	},
+	"item": [
+		{
+			"name": "Continents",
+			"item": [
+				{
+					"name": "Create Continents",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"continentName\": \"America\",\n    \"continentCoverage\": 17\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/continents",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"continents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Continents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/continents?o=6736889544ced0d79ec6fecf",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"continents"
+							],
+							"query": [
+								{
+									"key": "o",
+									"value": "6736889544ced0d79ec6fecf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Continent",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"continentCoverage\": 90\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/continents?continentName=Europa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"continents"
+							],
+							"query": [
+								{
+									"key": "continentName",
+									"value": "Europa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Continents",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/continents?continentName=Europa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"continents"
+							],
+							"query": [
+								{
+									"key": "continentName",
+									"value": "Europa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Continents by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/continents/673688ca44ced0d79ec6fed0",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"continents",
+								"673688ca44ced0d79ec6fed0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Create Projects",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"continentName\": \"America\",\n    \"continentCoverage\": 17\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/projects",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/projects?projectName=Transformación",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"projects"
+							],
+							"query": [
+								{
+									"key": "projectName",
+									"value": "Transformación"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Projects",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"continentCoverage\": 90\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/projects?continentName=Europa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"projects"
+							],
+							"query": [
+								{
+									"key": "continentName",
+									"value": "Europa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Projects",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/projects?projectName=Europa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"projects"
+							],
+							"query": [
+								{
+									"key": "projectName",
+									"value": "Europa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Projects by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/projects/673688ca44ced0d79ec6fed0",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"projects",
+								"673688ca44ced0d79ec6fed0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contacts",
+			"item": [
+				{
+					"name": "Get Contacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/contacts",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Contacts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/contacts",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin@admin.com\",\n    \"password\": \"TalentoTech2024\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/getUsers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"getUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"David\",\n    \"lastName\": \"Chaves\",\n    \"email\": \"admin@admin.com\",\n    \"password\": \"TalentoTech2024\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
