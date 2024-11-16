@@ -6,5 +6,4 @@ const contactRoutes = Router();
 contactRoutes.post('/contacts', createContact);
 contactRoutes.get('/contacts', getContacts);
 
-
 export {contactRoutes};
