@@ -7,7 +7,7 @@ continentRoutes.post('/continents', createContinent);
 continentRoutes.get('/continents', getContinents);
 continentRoutes.get('/continents/:id', getContinentsById)
 continentRoutes.put('/continents', updateContinent);
-continentRoutes.delete('/continents', deleteContinent);
+continentRoutes.delete('/continents/:id', deleteContinent);
 
 
 export {continentRoutes};

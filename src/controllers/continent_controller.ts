@@ -26,9 +26,9 @@ export const getContinents = async (req: Request, res: Response): Promise<Respon
 
 export const getContinentsById = async (req: Request, res: Response): Promise<Response> => {
     try {
-        const movieId = req.params.id;
+        const continentId = req.params.id;
         const collection = await dbConnection('continents');
-        const document = await collection.findOne({_id : new ObjectId(movieId)});    
+        const document = await collection.findOne({_id : new ObjectId(continentId)});    
         return res.status(200).json(document);
     } catch (error) {
         return res.status(500).json({messge: `Error al buscar el documento ${error}`});
@@ -49,9 +49,9 @@ export const updateContinent = async (req: Request, res: Response): Promise<Resp
 
 export const deleteContinent = async (req: Request, res: Response): Promise<Response> => {
     try {
-        const query = req.query;
+        const continentId = req.params.id;
         const collection = await dbConnection('continents');
-        const document = await collection.deleteOne(query);    
+        const document = await collection.deleteOne({_id : new ObjectId(continentId)});    
         return res.status(200).json(document);
     } catch (error) {
         return res.status(500).json({messge: `Error al eliminar el documento ${error}`});
