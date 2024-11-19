@@ -17,6 +17,9 @@ app.use('/api', continentRoutes);
 app.use('/api', projectRoutes);
 app.use('/api', contactRoutes);
 app.use('/api', userRoutes);
+app.get('/', (req, res) => {
+    res.send('hello world')
+})
 
 app.listen(port, () => {
     console.log(`Estoy corriendo en el puerto ${port}`);
