@@ -4,7 +4,7 @@ import { projectRoutes } from "./routes/projects_routes";
 import { contactRoutes } from "./routes/contacts_routes";
 import { userRoutes } from "./routes/users_routes";
 import cors from "cors";
-
+import 'dotenv/config';
 
 const app = express();
 const port = 3000;
@@ -18,7 +18,7 @@ app.use('/api', projectRoutes);
 app.use('/api', contactRoutes);
 app.use('/api', userRoutes);
 app.get('/', (req, res) => {
-    res.send('hello world')
+    res.send(process.env.CLAVE_JWT);
 })
 
 app.listen(port, () => {
