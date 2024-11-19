@@ -131,6 +131,3 @@ dist
 
 # package-lock
 package-lock.json
-
-# lib compile
-lib/
